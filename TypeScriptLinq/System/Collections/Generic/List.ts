@@ -124,6 +124,8 @@
                     <TKey>(Func: (x: T) => TKey, comparer: (a: TKey, b: TKey) => number): List<T>;
                 };
 
+                RemoveAll: (Func: (x: T) => boolean) => List<T>;
+
                 Reverse: () => List<T>;
 
                 Select: {
