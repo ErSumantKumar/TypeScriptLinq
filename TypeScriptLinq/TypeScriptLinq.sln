@@ -3,8 +3,28 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "System", "System", "{AEE39441-62B9-4346-BBF4-4967F367214D}"
+	ProjectSection(SolutionItems) = preProject
+		System\Object.ts = System\Object.ts
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Collections", "Collections", "{79BC3FAF-BF7C-4849-B007-A32CD57E3D41}"
+	ProjectSection(SolutionItems) = preProject
+		System\Collections\IEqualityComparer.ts = System\Collections\IEqualityComparer.ts
+		System\Collections\IGrouping.ts = System\Collections\IGrouping.ts
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Generic", "Generic", "{95F5DCD8-AA7F-4256-AFBF-D8473E3291E5}"
+	ProjectSection(SolutionItems) = preProject
+		System\Collections\Generic\List.ts = System\Collections\Generic\List.ts
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{79BC3FAF-BF7C-4849-B007-A32CD57E3D41} = {AEE39441-62B9-4346-BBF4-4967F367214D}
+		{95F5DCD8-AA7F-4256-AFBF-D8473E3291E5} = {79BC3FAF-BF7C-4849-B007-A32CD57E3D41}
 	EndGlobalSection
 EndGlobal
