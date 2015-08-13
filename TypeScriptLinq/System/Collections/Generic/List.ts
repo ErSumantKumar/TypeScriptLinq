@@ -182,8 +182,9 @@
 
 import List = System.Collections.Generic.List;
 
-function List<T>(array: T[])
-{ }
+function List<T>(array: T[]): List<T> {
+    return List<T>(array);
+}
 
 interface Array<T> {
     ToList<T>(): List<T>;
