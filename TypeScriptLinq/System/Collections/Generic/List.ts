@@ -4,8 +4,8 @@
             export interface List<T>
             {
 
-                constructor( array: T[]);
-
+               // constructor( array: T[]);
+                new (array: T[]);
 
                 Aggregate: {
                     <TResult>(Func: (current: T, next: T) => TResult): T;
@@ -181,10 +181,6 @@
 } 
 
 import List = System.Collections.Generic.List;
-
-function List<T>(array: T[]): List<T> {
-    return List<T>(array);
-}
 
 interface Array<T> {
     ToList<T>(): List<T>;
