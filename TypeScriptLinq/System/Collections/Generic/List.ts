@@ -180,7 +180,7 @@
     }
 } 
 
-import IList = System.Collections.Generic.List;
+import List = System.Collections.Generic.List;
 
 
 
