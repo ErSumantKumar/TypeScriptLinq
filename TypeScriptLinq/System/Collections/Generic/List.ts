@@ -6,7 +6,7 @@
 
                // constructor( array: T[]);
                 new (array: T[]);
-
+                Add: (item: T) => List<T>;
                 Aggregate: {
                     <TResult>(Func: (current: T, next: T) => TResult): T;
                     <TResult>(Func: (current: T, next: T) => TResult, seed: T ): T;
@@ -180,7 +180,9 @@
     }
 } 
 
-import List = System.Collections.Generic.List;
+import IList = System.Collections.Generic.List;
+
+
 
 interface Array<T> {
     ToList<T>(): List<T>;
